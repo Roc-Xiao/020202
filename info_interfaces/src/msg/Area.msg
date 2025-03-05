@@ -1,0 +1,7 @@
+Point base_grid_pos
+Point recover_grid_pos
+Point password_grid_pos
+Point green_in_grid_pos
+Point green_out_grid_pos
+Point purple_in_grid_pos
+Point purple_out_grid_pos
