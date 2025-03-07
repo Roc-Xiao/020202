@@ -1,4 +1,4 @@
- #ifndef _TOPIC_CONFIG_HPP_
+#ifndef _TOPIC_CONFIG_HPP_
 #define _TOPIC_CONFIG_HPP_
 
 namespace topic_name {
@@ -9,4 +9,4 @@ namespace topic_name {
     const char* shoot = "shoot";
 }
 
-#endif // ^^ !_TOPIC_CONFIG_HPP_
+#endif // _TOPIC_CONFIG_HPP_

@@ -41,4 +41,4 @@ namespace navigation {
     };
 }
 
-#endif // !_NAVIGATION_NODE_HPP_
+#endif // _NAVIGATION_NODE_HPP_

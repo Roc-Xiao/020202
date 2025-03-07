@@ -30,4 +30,4 @@ namespace vision {
     };
 }
 
-#endif // !_VISION_NODE_HPP_ 
+#endif // _VISION_NODE_HPP_

@@ -1,4 +1,4 @@
- #ifndef _PORT_HANDLER_HPP_
+#ifndef _PORT_HANDLER_HPP_
 #define _PORT_HANDLER_HPP_
 
 #include <fcntl.h>
@@ -33,4 +33,4 @@ private:
     struct termios m_options;
 };
 
-#endif // ^^ !_PORT_HANDLER_HPP_
+#endif // _PORT_HANDLER_HPP_

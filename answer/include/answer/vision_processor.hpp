@@ -20,4 +20,4 @@ public:
     );
 };
 
-#endif // !_VISION_PROCESSOR_HPP_
+#endif // _VISION_PROCESSOR_HPP_

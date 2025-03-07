@@ -1,4 +1,4 @@
- #ifndef _GAME_CONFIG_HPP_
+#ifndef _GAME_CONFIG_HPP_
 #define _GAME_CONFIG_HPP_
 
 namespace game_params {
@@ -10,4 +10,4 @@ namespace game_params {
     const double speed_scale = 1.0 / 32.0; // 速度缩放比例
 }
 
-#endif // ^^ !_GAME_CONFIG_HPP_
+#endif // _GAME_CONFIG_HPP_

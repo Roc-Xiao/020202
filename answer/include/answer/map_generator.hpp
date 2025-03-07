@@ -14,4 +14,4 @@ public:
     static info_interfaces::msg::Robot detect_robots(const cv::Mat& image, int hp_block_width);
 };
 
-#endif // !_MAP_GENERATOR_HPP_
+#endif // _MAP_GENERATOR_HPP_

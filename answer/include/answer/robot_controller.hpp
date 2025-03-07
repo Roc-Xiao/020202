@@ -1,4 +1,4 @@
- #ifndef _ROBOT_CONTROLLER_HPP_
+#ifndef _ROBOT_CONTROLLER_HPP_
 #define _ROBOT_CONTROLLER_HPP_
 
 #include <rclcpp/rclcpp.hpp>
@@ -24,4 +24,4 @@ private:
     int m_move_count;
 };
 
-#endif // ^^ !_ROBOT_CONTROLLER_HPP_
+#endif // _ROBOT_CONTROLLER_HPP_

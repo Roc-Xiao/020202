@@ -1,4 +1,4 @@
- #ifndef _DATA_PROTOCOL_HPP_
+#ifndef _DATA_PROTOCOL_HPP_
 #define _DATA_PROTOCOL_HPP_
 
 #include <cstdint>
@@ -24,4 +24,4 @@ namespace protocol {
     };
 }
 
-#endif // ^^ !_DATA_PROTOCOL_HPP_
+#endif // _DATA_PROTOCOL_HPP_
