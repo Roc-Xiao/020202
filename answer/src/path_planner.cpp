@@ -59,7 +59,7 @@ std::vector<info_interfaces::msg::Point> PathPlanner::plan_path(
                 continue;
             }
 
-            // 计算新的g_cost（对角线移动代价为1.414，直线移动代价为1）
+            // 计算新的g_cost
             double new_g_cost = current->g_cost + 
                 ((dx[i] != 0 && dy[i] != 0) ? 1.414 : 1.0);
 

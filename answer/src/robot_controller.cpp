@@ -9,15 +9,15 @@ geometry_msgs::msg::Pose2D RobotController::calculate_movement(
     const std::vector<std::pair<int, int>>& path)
 {
     geometry_msgs::msg::Pose2D pose;
-    
+
     if (path.size() >= 2) {
         pose.x = (path[1].first - robot_info->our_robot_grid_pos.x) * game_params::speed_scale;
         pose.y = (path[1].second - robot_info->our_robot_grid_pos.y) * game_params::speed_scale;
-        
+
         if (!robot_info->enemy_real_pos_vec.empty()) {
-            int32_t dy = static_cast<int32_t>(robot_info->enemy_real_pos_vec[0].y) - 
+            int32_t dy = static_cast<int32_t>(robot_info->enemy_real_pos_vec[0].y) -
                         static_cast<int32_t>(robot_info->our_robot_real_pos.y);
-            int32_t dx = static_cast<int32_t>(robot_info->enemy_real_pos_vec[0].x) - 
+            int32_t dx = static_cast<int32_t>(robot_info->enemy_real_pos_vec[0].x) -
                         static_cast<int32_t>(robot_info->our_robot_real_pos.x);
             pose.theta = std::atan2(dy, dx);
         }
@@ -29,11 +29,11 @@ geometry_msgs::msg::Pose2D RobotController::calculate_movement(
         pose.x = m_dir[m_move_count][0];
         pose.y = m_dir[m_move_count][1];
         m_move_count = (m_move_count + 1) % 4;
-        
+
         if (!robot_info->enemy_real_pos_vec.empty()) {
-            int32_t dy = static_cast<int32_t>(robot_info->enemy_real_pos_vec[0].y) - 
+            int32_t dy = static_cast<int32_t>(robot_info->enemy_real_pos_vec[0].y) -
                         static_cast<int32_t>(robot_info->our_robot_real_pos.y);
-            int32_t dx = static_cast<int32_t>(robot_info->enemy_real_pos_vec[0].x) - 
+            int32_t dx = static_cast<int32_t>(robot_info->enemy_real_pos_vec[0].x) -
                         static_cast<int32_t>(robot_info->our_robot_real_pos.x);
             pose.theta = std::atan2(dy, dx);
         }
@@ -41,7 +41,7 @@ geometry_msgs::msg::Pose2D RobotController::calculate_movement(
             pose.theta = 0;
         }
     }
-    
+
     return pose;
 }
 
